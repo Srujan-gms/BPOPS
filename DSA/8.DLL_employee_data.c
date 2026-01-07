@@ -24,13 +24,13 @@ temp = getnode();
 temp->llink = NULL;
 temp->rlink = NULL;
 printf("Enter SSN: ");
-fgets(temp->ssn, sizeof(temp->ssn)*3, stdin);
+gets(temp->ssn);
 printf("Enter Name: ");
-fgets(temp->name, sizeof(temp->name)*3, stdin);
+gets(temp->name);
 printf("Enter dept: ");
-fgets(temp->dept, sizeof(temp->dept)*3, stdin);
+gets(temp->dept);
 printf("Enter designation: ");
-fgets(temp->desig, sizeof(temp->desig)*3, stdin);
+gets(temp->desig);
 printf("Enter phno: ");
 scanf("%d", &phno); 
 temp->phno = phno;
@@ -72,7 +72,7 @@ printf("\n%s\t%s\t%s\t%s\t%d\t%f\n", temp1->ssn, temp1->name, temp1->dept, temp1
 temp1 = temp1->rlink;
 }
 printf("\n%s\t%s\t%s\t%s\t%d\t%f\n", temp1->ssn, temp1->name, temp1->dept, temp1->desig, temp1->phno, temp1->sal);
-printf("the student count is %d\n", count);
+printf("the employee count is %d\n", count);
 }
 }
 
