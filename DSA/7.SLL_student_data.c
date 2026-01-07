@@ -131,6 +131,6 @@ case 5: first = delete_front(first); break;
 case 6: exit(0); break;
 default: printf("INVALID CHOICE !");
 }
-return 0;
 }
+return 0;
 }
